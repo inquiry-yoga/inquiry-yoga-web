@@ -8,6 +8,7 @@
     "server"
   ],
   "scripts": {
-    "start": "cd server && yarn start"
+    "start": "cd server && yarn start",
+    "build": "pushd browser && yarn build"
   }
 }
