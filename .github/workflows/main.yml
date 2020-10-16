@@ -1,6 +1,6 @@
 name: Node.js Build
 on:
-  pushy:
+  push:
     branches: [master]
 jobs:
   build:
