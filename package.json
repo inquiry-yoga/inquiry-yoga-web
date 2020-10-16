@@ -9,6 +9,6 @@
   ],
   "scripts": {
     "start": "cd server && yarn start",
-    "build": "cd browser && yarn build"
+    "build": "cd browser && yarn && yarn build"
   }
 }
