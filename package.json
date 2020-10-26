@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "author": "Ladd Hoffman <laddhoffman@gmail.com>",
   "private": true,
-  "workspaces": [
-    "browser",
-    "server"
-  ],
+  "workspaces": {
+    "packages": [
+      "browser",
+      "server",
+      "keystone"
+    ],
+    "nohoist": [
+      "**/@keystonejs",
+      "**/@keystonejs/**"
+    ]
+  },
   "scripts": {
     "start": "cd server && yarn start",
     "build": "cd browser && yarn && yarn build"
